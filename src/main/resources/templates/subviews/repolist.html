@@ -1,0 +1,24 @@
+<table>
+	<tr>
+		<th>Título</th>
+		<th>Sinopsis</th>
+		<th>Género</th>
+		<th>Director</th>
+		<th>Reparto</th>
+		<th>Año</th>
+		<th>Fecha estreno</th>
+		<th>Productor</th>
+		<th>Pais</th>	
+	</tr>
+	<tr th:each="pelicula : ${lista}">
+		<td th:text="${pelicula.title}"></td>
+		<td th:text="${pelicula.sinopsis}"></td>
+		<td th:text="${pelicula.genre}"></td>
+		<td th:text="${pelicula.director}"></td>
+		<td th:text="${pelicula.reparto}"></td>
+		<td th:text="${pelicula.year}"></td>
+		<td th:text="${pelicula.datePremiere}"></td>
+		<td th:text="${pelicula.producer}"></td>
+		<td th:text="${pelicula.country}"></td>
+	</tr>
+</table>
